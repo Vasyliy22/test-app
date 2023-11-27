@@ -1,0 +1,23 @@
+.action {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  &__load {
+    padding: 8px 12px;
+    border: none;
+    background-color: #aaa;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    transition: .3s;
+
+    &:hover {
+      background-color: #bbb;
+    }
+
+    &:active {
+      background-color: #888;
+    }
+  }
+}

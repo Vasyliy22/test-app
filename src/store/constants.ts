@@ -1,0 +1,10 @@
+export const SET_BOOKS = 'SET_BOOKS';
+export const APPEND_BOOKS = 'APPEND_BOOKS';
+export const SET_SEARCH_PHRASE = 'SET_SEARCH_PHRASE';
+export const SET_SORT = 'SET_SORT';
+export const SET_FILTER = 'SET_FILTER';
+export const SET_LOADING = 'SET_LOADING';
+export const SET_LOADING_MORE = 'SET_LOADING_MORE';
+export const SET_TOTAL_COUNT = 'SET_TOTAL_COUNT';
+export const SET_CURRENT_BOOK = 'SET_CURRENT_BOOK';
+export const CLEAR_CURRENT_BOOK = 'CLEAR_CURRENT_BOOK';

@@ -1,0 +1,70 @@
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onTable {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+
+  @include onDesktop {
+    padding: 50px 100px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 10px;
+  margin-bottom: 40px;
+
+  @include onDesktop {
+    padding: 20px 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  &__item {
+    flex: 0 1 25%;
+    padding: 12px;
+  }
+}
+
+.books-length {
+  text-align: center;
+}
